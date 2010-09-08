@@ -1,0 +1,39 @@
+# Utility
+alias reload='source ~/bin/dot_files/bash/aliases'
+alias ea='mate -w ~/bin/dot_files/bash/aliases && reload' # Edit aliases
+alias ee="mate ~/bin/dot_files/bash/env"
+
+alias ls="ls -G"
+alias a='ls -A' # -A all except literal . ..
+alias la="ls -A -l -G"
+alias c='clear'
+alias cdd='cd -'  # goto last dir cd'ed from
+alias cl='clear; l'
+function cdc() { 
+    cd $1; ls 
+}
+alias cls='clear; ls'
+alias h='history'
+alias l.='ls -d .[^.]*'
+alias l='ls -lhGt'  # -l long listing, most recent first
+                    # -G color
+alias lh="ls -lh"
+alias ll='ls -lhG'  # -l long listing, human readable, no group info
+alias lt='ls -lt' # sort with recently modified first
+
+
+alias myams='cd /var/www/myamsix_returns'
+alias sc='./script/console'
+alias ss='./script/server'
+alias gen='./script/generate '
+alias dbm='rake db:migrate'
+alias tl='tail -f log/*.log'
+alias h="history"
+alias st="svn st"
+
+# Ruby
+alias r="rake"
+
+# http://oleganza.tumblr.com/post/127709563/snow-leopard-with-legacy-macports-and-rubygems
+alias sgi32="sudo env ARCHFLAGS=\"-Os -arch i386 -fno-common\" gem install --no-ri --no-rdoc"
+alias sgi64="sudo env ARCHFLAGS=\"-Os -arch x86_64 -fno-common\" gem install --no-ri --no-rdoc"
