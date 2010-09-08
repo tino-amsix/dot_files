@@ -4,8 +4,6 @@ export TERM="xterm-color"
 
 export SVN_EDITOR="vi"
 export REPOS="svn+ssh://miraculix.noc.ams-ix.net/var/lib/svn"
-export AMTRUNK=$REPOS"/my.ams-ix.net/trunk"
-export AMBRANCH=$REPOS"/my.ams-ix.net/branches"
 export EUTRUNK=$REPOS"/www.euro-ix.net/trunk"
 export EUBRANCH=$REPOS"/www.euro-ix.net/branches"
 export MYAMTRUNK=$REPOS"/myamsix_returns/trunk"
